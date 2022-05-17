@@ -60,7 +60,7 @@
          APR (HTTP/AJP) Connector: /docs/apr.html
          Define a non-SSL/TLS HTTP/1.1 Connector on port 8080
     -->
-    <Connector connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/>
+    <Connector connectionTimeout="20000" port="8181" protocol="HTTP/1.1" redirectPort="8443"/>
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
@@ -152,7 +152,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="01_ServletLifeCycle" path="/01_ServletLifeCycle" reloadable="true" source="org.eclipse.jst.jee.server:01_ServletLifeCycle"/><Context docBase="02_CalculationServletDemo" path="/02_CalculationServletDemo" reloadable="true" source="org.eclipse.jst.jee.server:02_CalculationServletDemo"/><Context docBase="03_LoginApplication" path="/03_LoginApplication" reloadable="true" source="org.eclipse.jst.jee.server:03_LoginApplication"/><Context docBase="04_MultipageLoginApplication" path="/04_MultipageLoginApplication" reloadable="true" source="org.eclipse.jst.jee.server:04_MultipageLoginApplication"/><Context docBase="05_Employee_JDBC" path="/05_Employee_JDBC" reloadable="true" source="org.eclipse.jst.jee.server:05_Employee_JDBC"/></Host>
+      <Context docBase="06_JSP" path="/06_JSP" reloadable="true" source="org.eclipse.jst.jee.server:06_JSP"/><Context docBase="05_Employee_JDBC" path="/05_Employee_JDBC" reloadable="true" source="org.eclipse.jst.jee.server:05_Employee_JDBC"/><Context docBase="07_Assignment" path="/07_Assignment" reloadable="true" source="org.eclipse.jst.jee.server:07_Assignment"/></Host>
     </Engine>
   </Service>
 </Server>
